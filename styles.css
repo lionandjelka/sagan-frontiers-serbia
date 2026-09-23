@@ -273,9 +273,12 @@ button { font: inherit; }
 .soc-heading { margin-bottom: 34px; }
 .soc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .soc-card {
-  min-height: 190px;
-  padding: 24px;
+  min-height: 160px;
+  padding: 26px 24px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 22px;
@@ -295,7 +298,6 @@ button { font: inherit; }
   box-shadow: 0 0 50px rgba(82,231,255,.04) inset;
 }
 .soc-card:hover { transform: translateY(-4px); border-color: rgba(82,231,255,.34); background: linear-gradient(180deg, rgba(82,231,255,.06), rgba(255,255,255,.018)); }
-.soc-index { display: block; color: var(--cyan); font-size: .66rem; font-weight: 800; letter-spacing: .18em; margin-bottom: 30px; }
 .soc-card h3 { margin: 0 0 8px; font-size: 1.28rem; letter-spacing: -.02em; }
 .soc-card p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.55; max-width: 92%; }
 .soc-tag { display: inline-flex; margin-top: 14px; padding: 6px 9px; border: 1px solid rgba(82,231,255,.24); border-radius: 999px; color: var(--cyan); background: rgba(82,231,255,.045); font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 800; }
@@ -571,3 +573,71 @@ button { font: inherit; }
 .registration-live-link{flex:0 0 auto;display:inline-flex;align-items:center;border:1px solid rgba(113,205,255,.34);border-radius:999px;padding:.65rem .82rem;font-size:.74rem;font-weight:800;letter-spacing:.10em;color:#9ee7ff;background:rgba(45,160,228,.08);text-decoration:none;white-space:nowrap;transition:transform .2s ease,border-color .2s ease,background .2s ease}
 .registration-live-link:hover{transform:translateY(-1px);border-color:rgba(113,205,255,.58);background:rgba(45,160,228,.13)}
 @media (max-width:860px){.registration-live-bar{align-items:flex-start;flex-direction:column}.registration-live-bar .button{width:100%;text-align:center}.google-form-frame iframe{min-height:2050px}.registration-live-link{white-space:normal;width:100%;justify-content:center}}
+
+
+/* 2026-09-23: expanded initiative introduction */
+.hero-intro-expanded{display:grid;gap:.55rem;max-width:800px}
+.hero-intro-expanded p{margin:0;color:var(--muted);font-size:1.02rem;line-height:1.7}
+.hero-intro-expanded strong{color:var(--text);font-weight:700}
+.hero-context-link{width:max-content;margin-top:.25rem;color:#9ee7ff;text-decoration:none;font-size:.82rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid rgba(158,231,255,.38);padding-bottom:.18rem;transition:color .2s ease,border-color .2s ease}
+.hero-context-link:hover{color:#fff;border-color:#fff}
+
+/* Updated public programme */
+.lecture-track{margin:12px 0 -10px!important;color:#9ee7ff!important;font-size:.7rem!important;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.lecture-card:nth-child(2) .lecture-track{color:#71f0c4!important}
+.lecture-card:nth-child(3) .lecture-track{color:#ffbf63!important}
+.lecture-card:nth-child(4) .lecture-track{color:#9edfff!important}
+.vs-word{font-size:.78em;font-weight:500;font-style:italic;opacity:.8}
+
+/* Public lecture poster gallery */
+.poster-showcase{margin-top:44px;padding:24px;border:1px solid rgba(151,196,255,.16);border-radius:26px;background:linear-gradient(145deg,rgba(13,25,49,.68),rgba(8,15,31,.55));box-shadow:0 24px 70px rgba(0,0,0,.18)}
+.poster-showcase-head{display:flex;justify-content:space-between;align-items:end;gap:1.5rem;margin-bottom:22px}
+.poster-showcase-head h3{margin:.35rem 0 0;font-size:clamp(1.45rem,2.6vw,2.1rem);letter-spacing:-.03em}
+.poster-download{flex:0 0 auto;color:#9ee7ff;text-decoration:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(113,205,255,.30);border-radius:999px;padding:.68rem .9rem;background:rgba(45,160,228,.07);transition:transform .2s ease,border-color .2s ease,background .2s ease}
+.poster-download:hover{transform:translateY(-2px);border-color:rgba(113,205,255,.58);background:rgba(45,160,228,.13)}
+.poster-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.poster-card{display:block;overflow:hidden;border-radius:18px;border:1px solid rgba(151,196,255,.14);background:rgba(255,255,255,.025);text-decoration:none;color:var(--text);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.poster-card:hover{transform:translateY(-5px);border-color:rgba(113,205,255,.42);box-shadow:0 20px 48px rgba(0,0,0,.32)}
+.poster-card img{display:block;width:100%;height:auto;aspect-ratio:1/1.414;object-fit:cover;background:#030817}
+.poster-card>span{display:grid;gap:.22rem;padding:13px 14px 15px}
+.poster-card strong{font-size:.8rem;letter-spacing:.08em}
+.poster-card small{color:var(--muted);font-size:.74rem;line-height:1.4}
+
+/* SOC secretariat */
+.secretariat{margin-top:28px;padding-top:26px;border-top:1px solid rgba(151,196,255,.14)}
+.secretariat-head{display:flex;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:16px}
+.secretariat-head h3{margin:.25rem 0 0;font-size:clamp(1.45rem,2.6vw,2.15rem);letter-spacing:-.03em}
+.secretariat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.secretary-card{display:flex;align-items:center;gap:16px;padding:20px;border:1px solid rgba(151,196,255,.15);border-radius:18px;background:linear-gradient(145deg,rgba(13,25,49,.58),rgba(8,15,31,.5))}
+.secretary-mark{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border-radius:50%;border:1px solid rgba(113,205,255,.30);color:#9ee7ff;font-size:.72rem;font-weight:800;letter-spacing:.08em;background:rgba(45,160,228,.07)}
+.secretary-card h4{margin:0 0 .25rem;font-size:1.12rem}
+.secretary-card p{margin:0;color:var(--muted);font-size:.88rem}
+
+@media (max-width:980px){.poster-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:680px){.poster-showcase{padding:16px}.poster-showcase-head{align-items:flex-start;flex-direction:column}.poster-download{width:100%;text-align:center}.poster-grid{grid-template-columns:1fr 1fr;gap:10px}.poster-card>span{padding:10px}.secretariat-grid{grid-template-columns:1fr}.secretariat-head{align-items:flex-start;flex-direction:column}}
+@media (max-width:480px){.poster-grid{grid-template-columns:1fr}}
+
+
+/* Public lecture announcements and posters — strict aligned rows */
+.public-lecture-pairing-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin:8px 0 22px;padding:18px 0;border-top:1px solid rgba(151,196,255,.12)}
+.public-lecture-pairing-head>div{max-width:760px}
+.public-lecture-pairing-head .eyebrow{margin-bottom:7px}
+.public-lecture-pairing-head p:not(.eyebrow){margin:0;color:var(--muted);font-size:.92rem}
+.public-lecture-rows{display:grid;gap:16px}
+.lecture-announcement-row,.lecture-poster-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+.lecture-announcement-row .lecture-card{height:100%;min-height:410px}
+.lecture-poster-row .poster-card{height:100%;display:flex;flex-direction:column}
+.lecture-poster-row .poster-card img{width:100%;aspect-ratio:1/1.414;object-fit:cover;flex:0 0 auto}
+.lecture-poster-row .poster-card>span{min-height:74px;flex:1;align-content:center}
+.lecture-poster-row .poster-card strong{line-height:1.28}
+@media (max-width:980px){
+  .lecture-announcement-row,.lecture-poster-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .public-lecture-pairing-head{align-items:flex-start;flex-direction:column}
+  .lecture-announcement-row .lecture-card{min-height:360px}
+}
+@media (max-width:680px){
+  .lecture-announcement-row,.lecture-poster-row{grid-template-columns:1fr}
+  .lecture-announcement-row .lecture-card{min-height:auto}
+  .public-lecture-pairing-head{margin-bottom:18px}
+  .poster-download{width:100%;text-align:center}
+}

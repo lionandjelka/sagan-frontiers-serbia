@@ -26,3 +26,21 @@ A dedicated Scientific Day registration section is included on the site. It curr
 
 
 Registration form: https://forms.gle/EGwJeK2JacJTkdUU6
+
+
+## Update 23 September 2026
+- Expanded homepage introduction for the international Carl Sagan Month context.
+- Updated all four public-lecture cards to match the final poster set.
+- Added a responsive four-poster gallery and downloadable poster-set PDF.
+- Added Saša Dujko to the Scientific Organising Committee.
+- Added conference secretaries Luka Ilić and Jovan Aleksić.
+
+
+## Latest layout update
+The Public Month section now pairs each lecture announcement directly with its official poster: announcement cards form the upper row on desktop, with the corresponding posters directly beneath them. The layout remains responsive on tablets and phones.
+
+
+## September 2026 layout update
+- Public lecture announcement cards are presented in one aligned row, with the four corresponding official posters in a second aligned row directly below.
+- SOC member cards no longer display numeric labels.
+- Saša Dujko is placed immediately after Milan Ćirković in the SOC listing.
